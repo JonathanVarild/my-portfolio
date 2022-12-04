@@ -1,0 +1,52 @@
+.header {
+	display: flex;
+	gap: 1rem;
+}
+
+.header > div {
+	background-color: var(--background-white);
+	border-radius: 29px;
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	border: 1px solid var(--outline-white);
+}
+
+.navList {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.navList > div {
+	z-index: 1;
+}
+
+.iconList {
+	display: flex;
+}
+
+.iconList > svg {
+	font-size: 1.7rem;
+	padding: 0.5rem 1rem;
+}
+
+.navList > div:hover,
+.iconList > svg:hover {
+	cursor: pointer;
+	color: var(--hover-gray);
+}
+
+.active {
+	color: var(--background-purple) !important;
+}
+
+.navHighlight {
+	background-color: white;
+	height: 100%;
+	border-radius: 29px;
+	position: absolute;
+	padding-block: 0.5rem;
+	color: transparent;
+}
