@@ -1,5 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Titillium+Web:wght@300;400;600;700&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --background-purple: #131420;
+	--background-white: #ffffff1a;
+	--outline-white: #ffffff4d;
+	--hover-gray: #d9d9d9;
+}
+
+body {
+	background-color: var(--background-purple);
+    margin-block: 50px;
+	margin-inline: auto;
+	width: min(80%, 1200px);
+	color: white;
+	font-family: "Titillium Web", sans-serif;
 }
