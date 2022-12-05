@@ -2,7 +2,6 @@
 	display: flex;
 	gap: 1rem;
 	position: fixed;
-	width: min(80%, 1200px);
 	margin-top: 50px;
 }
 

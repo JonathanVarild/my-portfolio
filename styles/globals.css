@@ -26,6 +26,6 @@ body {
 	flex-direction: column;
 }
 
-section {
+section, header {
 	width: min(80%, 1200px);
 }
