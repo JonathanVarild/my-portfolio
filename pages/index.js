@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import Header from "../components/Header";
-import styles from "../styles/index.module.css";
+import StartSection from "../components/StartSection";
 
 export default function Home() {
 	return (
@@ -11,6 +10,7 @@ export default function Home() {
 				<meta name="description" content="A web page that summarizes my skills and previous projects." />
 			</Head>
 			<Header />
+			<StartSection />
 		</>
 	);
 }
