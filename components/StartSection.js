@@ -14,7 +14,7 @@ function StartSection() {
 					</h2>
 					<h3>Full-stack developer and designer, focused on creating exceptional digital experiences.</h3>
 				</div>
-				<Image src={memoji_happy} height={"1rem"}/>
+				<Image src={memoji_happy} alt="Apple Memoji face representing me." />
 			</section>
 		</>
 	);
