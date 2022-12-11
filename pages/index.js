@@ -1,4 +1,5 @@
 import Head from "next/head";
+import AboutSection from "../components/AboutSection";
 import Header from "../components/Header";
 import StartSection from "../components/StartSection";
 
@@ -11,6 +12,7 @@ export default function Home() {
 			</Head>
 			<Header />
 			<StartSection />
+			<AboutSection />
 		</>
 	);
 }

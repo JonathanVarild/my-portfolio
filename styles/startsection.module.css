@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .container {
@@ -24,7 +25,8 @@
 }
 
 #startSection h2 {
-    font-size: 3.7rem;
+    font-size: 3.9rem;
+    font-weight: 400;
 }
 
 #startSection h3 {
