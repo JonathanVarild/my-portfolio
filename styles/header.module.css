@@ -7,7 +7,7 @@
 
 .header > div {
 	background-color: var(--background-white);
-	border-radius: 29px;
+	border-radius: 100px;
 	padding: 0.5rem;
 	font-size: 1.2rem;
 	border: 1px solid var(--outline-white);
