@@ -1,5 +1,36 @@
 #startSection {
 	height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin-right: 6rem;
+}
+
+#startSection img {
+    height: 15em;
+    width: auto;
+}
+
+#startSection span {
+    color: var(--bright-purple);
+}
+
+#startSection h1 {
+    font-size: 6rem;
+    line-height: 5.5rem;
+}
+
+#startSection h2 {
+    font-size: 3.7rem;
+}
+
+#startSection h3 {
+    font-weight: 400;
+    font-size: 1.45rem;
+    color: var(--contrast-gray);
 }
 
 .sectionBackground {
@@ -9,6 +40,7 @@
     height: 100vh;
     z-index: -100;
     background: url("/codetest_background.jpg");
+    background-size: cover;
 }
 
 .sectionBackground::after {
