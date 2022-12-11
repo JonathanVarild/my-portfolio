@@ -1,6 +1,7 @@
 import Head from "next/head";
 import AboutSection from "../components/AboutSection";
 import Header from "../components/Header";
+import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
 import StartSection from "../components/StartSection";
 
@@ -15,6 +16,7 @@ export default function Home() {
 			<StartSection />
 			<AboutSection />
 			<SkillsSection />
+			<ProjectsSection />
 		</>
 	);
 }
