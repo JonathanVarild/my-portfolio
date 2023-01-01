@@ -1,0 +1,91 @@
+.body {
+	position: relative;
+	border-radius: 30px;
+	background: var(--background-white);
+	border: 1px solid var(--outline-white);
+	height: 260px;
+}
+
+.bottomContainer {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 1rem;
+	transition: bottom 0.2s ease-in-out;
+	padding: 0 1.5rem;
+	width: 100%;
+}
+
+.title {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+
+.subtitle {
+	font-size: 1rem;
+	line-height: 1.3rem;
+	color: var(--contrast-gray);
+}
+
+.body:hover .bottomContainer {
+	bottom: calc(100% - 1.8rem - 1.3rem - 1rem);
+}
+
+.infoContainer {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.tagsContainer {
+	display: inline-block;
+	opacity: 1;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.body:hover .tagsContainer {
+	opacity: 0;
+}
+
+.tagRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.tagRow > div {
+	color: var(--background-purple);
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
+	float: right;
+	background: white;
+	border-radius: 30px;
+	padding: 0 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.iconContainer {
+	position: absolute;
+	display: flex;
+	align-items: center;
+    gap: 0.5rem;
+	height: 3.1rem;
+	right: 1.5rem;
+	bottom: 0rem;
+	font-size: 2rem;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.iconContainer a {
+    color: white;
+}
+
+.iconContainer a:hover {
+    color: var(--hover-gray);
+}
+
+.body:hover .iconContainer {
+	opacity: 1;
+}
