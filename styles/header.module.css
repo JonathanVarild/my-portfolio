@@ -3,6 +3,13 @@
 	gap: 1rem;
 	position: fixed;
 	margin-top: 50px;
+	z-index: 9999;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+	z-index: 999999;
 }
 
 .header > div {

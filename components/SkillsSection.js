@@ -5,7 +5,7 @@ import react_white from "../public/logos/react_white.png";
 
 function SkillsSection() {
 	return (
-		<section>
+		<section id="skills">
 			<h2>Skills</h2>
 			<div className={sectionStyles.content}>
 				These are some of the skills that I have acquired over the years. I'm a fast learner and is always open to learn something new! Click on each widget to learn more.

@@ -14,14 +14,14 @@ function Header() {
 
 	const navItems = [
 		{ title: "Start", path: "#", ref: useRef(null) },
-		{ title: "About Me", path: "#", ref: useRef(null) },
-		{ title: "Skills", path: "#", ref: useRef(null) },
-		{ title: "Projects", path: "#", ref: useRef(null) },
+		{ title: "About Me", path: "#about", ref: useRef(null) },
+		{ title: "Skills", path: "#skills", ref: useRef(null) },
+		{ title: "Projects", path: "#projects", ref: useRef(null) },
 		{ title: "Contact Me", path: "#", ref: useRef(null) },
 	];
 
 	const navHTMLItems = navItems.map((item, index) => (
-		<div
+		<a
 			ref={item.ref}
 			key={index}
 			onClick={({ target }) => {
@@ -30,9 +30,10 @@ function Header() {
 				setActiveItem(index);
 			}}
 			className={index == activeItem ? styles.active : ""}
+			href={item.path}
 		>
 			{item.title}
-		</div>
+		</a>
 	));
 
 	const setupVariables = () => {
@@ -40,7 +41,7 @@ function Header() {
 		setLeftMargin(navItems[activeItem].ref.current.offsetLeft);
 		setWidth(navItems[activeItem].ref.current.offsetWidth);
 	};
-    
+
 	useEffect(() => {
 		setupVariables();
 		window.addEventListener("resize", setupVariables);
