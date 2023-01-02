@@ -7,19 +7,6 @@
     background-size: cover;
 }
 
-.overlayContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200%;
-    transition: top 0.2s ease-in-out;
-}
-
-.body:hover .overlayContainer {
-    top: -100%;
-}
-
 .dynamicContainer {
 	display: flex;
 	justify-content: space-between;

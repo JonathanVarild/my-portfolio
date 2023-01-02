@@ -8,7 +8,6 @@ import classCondition from "../modules/classCondition";
 function ProjectWidget({ title, subtitle, description, tags, background, lightMode }) {
 	return (
 		<div className={classCondition(styles.body, [styles.lightMode, lightMode])} style={{ background: background || "white" }}>
-			<div className={styles.overlayContainer} />
 			<div className={styles.dynamicContainer}>
 				<div className={styles.infoContainer}>
 					<div className={styles.title}>{title}</div>
