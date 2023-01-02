@@ -2,11 +2,13 @@ import styles from "../styles/projectwidget.module.css";
 import { Fragment } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCircleArrowDown, faCircleArrowRight, faCloudArrowDown, faDownload, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faCircleArrowDown, faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
+import classCondition from "../modules/classCondition";
 
-function ProjectWidget({ title, subtitle, description, tags }) {
+function ProjectWidget({ title, subtitle, description, tags, background, lightMode }) {
 	return (
-		<div className={styles.body}>
+		<div className={classCondition(styles.body, [styles.lightMode, lightMode])} style={{ background: background || "white" }}>
+			<div className={styles.overlayContainer} />
 			<div className={styles.dynamicContainer}>
 				<div className={styles.infoContainer}>
 					<div className={styles.title}>{title}</div>
