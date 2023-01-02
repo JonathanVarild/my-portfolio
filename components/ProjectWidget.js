@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCircleArrowDown, faCircleArrowRight, faCloudArrowDown, faDownload, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
-function ProjectWidget({ title, subtitle, tags }) {
+function ProjectWidget({ title, subtitle, description, tags }) {
 	return (
 		<div className={styles.body}>
-			<div className={styles.bottomContainer}>
+			<div className={styles.dynamicContainer}>
 				<div className={styles.infoContainer}>
 					<div className={styles.title}>{title}</div>
 					<div className={styles.subtitle}>{subtitle}</div>
@@ -32,6 +32,11 @@ function ProjectWidget({ title, subtitle, tags }) {
 						<FontAwesomeIcon icon={faCircleArrowDown} />
 					</a>
 				</div>
+			</div>
+			<div className={styles.descContainer}>{description}</div>
+			<div className={styles.bottomButton}>
+				<div>Read More</div>
+				<FontAwesomeIcon icon={faCircleArrowRight} />
 			</div>
 		</div>
 	);
