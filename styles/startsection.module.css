@@ -1,5 +1,6 @@
 #startSection {
 	height: 100vh;
+    min-height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
