@@ -17,7 +17,7 @@ function Header() {
 		{ title: "About Me", path: "#about", ref: useRef(null) },
 		{ title: "Skills", path: "#skills", ref: useRef(null) },
 		{ title: "Projects", path: "#projects", ref: useRef(null) },
-		{ title: "Contact Me", path: "#", ref: useRef(null) },
+		{ title: "Contact Me", path: "#contact", ref: useRef(null) },
 	];
 
 	const navHTMLItems = navItems.map((item, index) => (
