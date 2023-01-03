@@ -11,7 +11,7 @@ function ContactSection() {
 		<section id="contact">
 			<h2>Contact Me</h2>
 			<div className={`${sectionStyles.content} ${styles.description}`}>
-				I'm all open to hear your offers, ideas or feedback! Feel free to contact me using any of the ways listed below. I'm always connected and usually reply within a few
+				I am all open to hear your offers, ideas or feedback! Feel free to contact me using any of the ways listed below. I am always connected and usually reply within a few
 				hours!
 			</div>
 			<div className={styles.buttonContainer}>

@@ -14,7 +14,7 @@ function ProjectsSection() {
 	return (
 		<section id="projects">
 			<h2>My Projects</h2>
-			<div className={sectionStyles.content}>These are some of the projects that I've worked on and feel extra proud about.</div>
+			<div className={sectionStyles.content}>These are some of the projects that I have worked on and feel extra proud about.</div>
 			<div className={styles.projectsContainer}>
 				<ProjectWidget
 					title="BloxHosting"
@@ -38,7 +38,7 @@ function ProjectsSection() {
 					title="EdgeHUD"
 					subtitle="Server Plugin"
 					tags={["Lua", "Garry's Mod", "User Interface", "For Sale"]}
-					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%);"
+					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%)"
 					logo={edgehud_logo}
 					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas congue urna non feugiat. In porttitor posuere justo ac feugiat. Donec a laoreet odio. Nam posuere, libero id fringilla laoreet, felis leo tincidunt felis, sed condimentum ligula nulla nec purus. Aliquam dapibus libero id sodales."
 				/>
@@ -46,7 +46,7 @@ function ProjectsSection() {
 					title="EdgeF4"
 					subtitle="Server Plugin"
 					tags={["Lua", "Garry's Mod", "User Interface", "For Sale"]}
-					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%);"
+					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%)"
 					logo={edgef4_logo}
 					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas congue urna non feugiat. In porttitor posuere justo ac feugiat. Donec a laoreet odio. Nam posuere, libero id fringilla laoreet, felis leo tincidunt felis, sed condimentum ligula nulla nec purus. Aliquam dapibus libero id sodales. "
 				/>
@@ -54,7 +54,7 @@ function ProjectsSection() {
 					title="EdgeScoreboard"
 					subtitle="Server Plugin"
 					tags={["Lua", "Garry's Mod", "User Interface", "For Sale"]}
-					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%);"
+					background="linear-gradient(0deg, #0c2442 0%, #0d4c9b 100%)"
 					logo={edgescoreboard_logo}
 					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas congue urna non feugiat. In porttitor posuere justo ac feugiat. Donec a laoreet odio. Nam posuere, libero id fringilla laoreet, felis leo tincidunt felis, sed condimentum ligula nulla nec purus. Aliquam dapibus libero id sodales."
 				/>
@@ -70,7 +70,7 @@ function ProjectsSection() {
 					title="VW-Chat"
 					subtitle="Online Java Game"
 					tags={["Java", "WebSockets", "Server/Client", "NetBeans"]}
-					background="linear-gradient(0deg, rgba(25,61,83,1) 0%, rgba(48,90,116,1) 100%);"
+					background="linear-gradient(0deg, rgba(25,61,83,1) 0%, rgba(48,90,116,1) 100%)"
 					logo={java_logo}
 					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas congue urna non feugiat. In porttitor posuere justo ac feugiat. Donec a laoreet odio. Nam posuere, libero id fringilla laoreet, felis leo tincidunt felis, sed condimentum ligula nulla nec purus. Aliquam dapibus libero id sodales. "
 				/>

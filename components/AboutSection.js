@@ -5,9 +5,9 @@ function AboutSection() {
 		<section id="about">
 			<h2>About Me</h2>
 			<div className={sectionStyles.content}>
-				Since 2015 I've designed and developed software using various tools and programming languages. I'm a mostly self-learnt programmer that is driven by the ambition to learn new
-				things and to deliver results beyond peoples expectation. This has in turn made me a quick learner who isn't affraid to learn new technologies and approaches to
-				technical problems.
+				I have since 2015 been designing and developing software using various tools and programming languages. I am a mostly self-learnt programmer that is driven by the
+				ambition to learn new things and to deliver results beyond peoples expectation. That has in turn made me a quick learner who is not affraid to learn new
+				technologies and approaches to technical problems.
 			</div>
 		</section>
 	);

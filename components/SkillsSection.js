@@ -8,7 +8,7 @@ function SkillsSection() {
 		<section id="skills">
 			<h2>Skills</h2>
 			<div className={sectionStyles.content}>
-				These are some of the skills that I have acquired over the years. I'm a fast learner and is always open to learn something new! Click on each widget to learn more.
+				These are some of the skills that I have acquired over the years. I am a fast learner and is always open to learn something new! Click on each widget to learn more.
 			</div>
 			<div className={styles.widgetContainer}>
 				<div className={styles.widgetRow}>
