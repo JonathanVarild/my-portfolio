@@ -167,3 +167,26 @@
 .lightMode .descContainer {
     color: var(--background-purple);
 }
+
+.logoContainer {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 1rem * 2 - 1.8rem - 1.3rem - 1rem);
+    opacity: 1;
+    transition: top 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.body:hover .logoContainer {
+    opacity: 0;
+    top: -100%;
+}
+
+.logoContainer img {
+    height: 60%;
+    width: auto;
+}

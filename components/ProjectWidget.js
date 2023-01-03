@@ -4,10 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCircleArrowDown, faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 import classCondition from "../modules/classCondition";
+import Image from "next/image";
 
-function ProjectWidget({ title, subtitle, description, tags, background, lightMode }) {
+function ProjectWidget({ title, subtitle, description, tags, background, logo, lightMode }) {
 	return (
 		<div className={classCondition(styles.body, [styles.lightMode, lightMode])} style={{ background: background || "white" }}>
+			<div className={styles.logoContainer}>
+				<Image src={logo} alt="Logo" />
+			</div>
 			<div className={styles.dynamicContainer}>
 				<div className={styles.infoContainer}>
 					<div className={styles.title}>{title}</div>
