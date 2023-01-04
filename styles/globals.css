@@ -9,12 +9,14 @@
 :root {
     --background-purple: #141628;
     --transparent-purple: #0d102f8c;
-	--bright-purple: #522ad5;
+	--bright-purple: #6435ff;
 	--hover-purple: #313760;
 	--background-white: #ffffff1a;
-	--outline-white: #ffffff4d;
+	--outline-white: #ffffff35;
 	--hover-gray: #d9d9d9;
 	--contrast-gray: #a3a3a3;
+	--dark-gray: #606060;
+	--block-margin: 3rem;
 }
 
 body {
@@ -29,11 +31,11 @@ body {
 	flex-direction: column;
 }
 
-section, header {
+section, header, footer {
 	width: min(80%, 1000px);
 }
 
-section {
+section, footer {
 	padding-inline: 2rem;
 	margin-bottom: 8rem;
 }
