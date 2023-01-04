@@ -1,0 +1,39 @@
+.footer {
+	border-top: 1px solid var(--outline-white);
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1rem;
+	margin-bottom: var(--block-margin);
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.starContainer svg {
+	color: var(--bright-purple);
+}
+
+.unchecked  {
+    color: var(--dark-gray) !important;
+}
+
+.copyrightContainer {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 0.8rem;
+	justify-content: center;
+	color: var(--contrast-gray);
+}
+
+.githubContainer {
+	text-align: right;
+}
+
+.githubContainer a {
+    color: #7d56ff;
+    font-weight: 600;
+}
