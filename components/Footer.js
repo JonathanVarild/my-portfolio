@@ -23,7 +23,7 @@ function Footer() {
 				<div className={styles.row}>
 					Made with <a href="https://nextjs.org" target="_blank">Next.js</a>
 				</div>
-				<div className={styles.row}>View source code on GitHub</div>
+				<div className={styles.row}>View source code on <a href="https://github.com/JonathanVarild/my-portfolio" target="_blank">Github</a></div>
 			</div>
 		</footer>
 	);
