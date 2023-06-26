@@ -15,16 +15,16 @@ function ContactSection() {
 				hours!
 			</div>
 			<div className={styles.buttonContainer}>
-				<div className={styles.button}>
+				<button onClick={() => {setShowModal(true)}}>
 					<FontAwesomeIcon icon={faPaperPlane} />
-					<div>Contact Form</div>
-				</div>
+					<div>Send Email</div>
+				</button>
 				<div className={styles.imageContainer}>
 					<Image src={memoji_callme_hq} alt="Memoji with call-me gesture." />
-					<div className={styles.button}>
+					<button>
 						<FontAwesomeIcon icon={faLinkedinIn} />
 						<div>Visit LinkedIn</div>
-					</div>
+					</button>
 				</div>
 			</div>
 		</section>

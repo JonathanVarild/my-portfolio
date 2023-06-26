@@ -44,3 +44,23 @@ section h2 {
 	font-size: 2.2rem;
 	font-weight: 600;
 }
+
+button {
+	width: 50%;
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.2rem;
+	border-radius: 30px;
+	background: var(--background-white);
+	border: 1px solid var(--outline-white);
+	padding: 1.5rem;
+	font-family: inherit;
+	color: inherit;
+}
+
+button:hover {
+	background: #ffffff25;
+	cursor: pointer;
+}
