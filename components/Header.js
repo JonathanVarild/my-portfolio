@@ -50,6 +50,10 @@ function Header() {
 		};
 	});
 
+	const openLink = (url) => {
+		window.open(url, "_blank");
+	};
+
 	return (
 		<header className={styles.header}>
 			<div className={styles.navList}>
@@ -63,8 +67,18 @@ function Header() {
 				{navHTMLItems}
 			</div>
 			<div className={styles.iconList}>
-				<FontAwesomeIcon icon={faLinkedinIn} />
-				<FontAwesomeIcon icon={faGithub} />
+				<FontAwesomeIcon
+					icon={faLinkedinIn}
+					onClick={() => {
+						openLink("https://www.linkedin.com/in/jonathanvärild/");
+					}}
+				/>
+				<FontAwesomeIcon
+					icon={faGithub}
+					onClick={() => {
+						openLink("https://github.com/JonathanVarild");
+					}}
+				/>
 				<FontAwesomeIcon icon={faFileContract} />
 			</div>
 		</header>
