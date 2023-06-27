@@ -1,3 +1,5 @@
+import { useState } from "react";
+import EmailModal from "./EmailModal";
 import sectionStyles from "../styles/section.module.css";
 import styles from "../styles/contactsection.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,7 +9,11 @@ import Image from "next/image";
 import memoji_callme_hq from "../public/memoji_callme_hq.png";
 
 function ContactSection() {
+	
+	const [showModal, setShowModal] = useState(false);
+
 	return (
+		<>
 		<section id="contact">
 			<h2>Contact Me</h2>
 			<div className={`${sectionStyles.content} ${styles.description}`}>
@@ -28,6 +34,8 @@ function ContactSection() {
 				</div>
 			</div>
 		</section>
+		{showModal && <EmailModal setVisibility={setShowModal} />}
+		</>
 	);
 }
 

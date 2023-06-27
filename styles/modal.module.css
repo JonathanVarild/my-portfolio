@@ -1,0 +1,60 @@
+.dialog {
+	background: var(--background-purple);
+	border: 1px solid var(--outline-white);
+	border-radius: 10px;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.5rem;
+	/* transition using opacity */
+}
+
+.dialog button {
+	font-size: 1rem;
+	padding: 0.5rem;
+	width: 80px;
+	border-radius: 11px;
+}
+
+.modalContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99999;
+	backdrop-filter: blur(5px);
+}
+
+.modalContainer .dialog {
+	width: 400px;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+}
+
+.infoContainer {
+	border-radius: 11px;
+	background: var(--background-white);
+	border: 1px solid var(--outline-white);
+	padding: 0.5rem;
+	text-align: center;
+	margin-block: 0.5rem;
+	font-weight: 600;
+}
+
+.primaryButton {
+	background-color: var(--bright-purple);
+}
+
+.primaryButton:hover {
+	background-color: var(--hover-purple2);
+}
