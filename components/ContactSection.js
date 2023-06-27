@@ -11,6 +11,10 @@ import memoji_callme_hq from "../public/memoji_callme_hq.png";
 function ContactSection() {
 	const [showModal, setShowModal] = useState(false);
 
+	const showEmailModal = () => {
+		setShowModal(true);
+	};
+
 	const openLinkedIn = () => {
 		window.open("https://www.linkedin.com/in/jonathanvärild/", "_blank");
 	};
@@ -24,11 +28,7 @@ function ContactSection() {
 					a few hours!
 				</div>
 				<div className={styles.buttonContainer}>
-					<button
-						onClick={() => {
-							setShowModal(true);
-						}}
-					>
+					<button onClick={showEmailModal}>
 						<FontAwesomeIcon icon={faPaperPlane} />
 						<div>Send Email</div>
 					</button>
