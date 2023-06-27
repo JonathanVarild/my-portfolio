@@ -16,7 +16,7 @@ function Footer() {
 				<div className={styles.subTitle}>Rate my portfolio</div>
 			</div>
 			<div className={styles.copyrightContainer}>
-				<div className={styles.row}>Copyright © 2022 Jonathan Värild. All rights reserved.</div>
+				<div className={styles.row}>Copyright © {(new Date()).getFullYear()} Jonathan Värild. All rights reserved.</div>
 				<div className={styles.row}>Memojis and other trademarks are the property of their respective owners.</div>
 			</div>
 			<div className={styles.githubContainer}>
