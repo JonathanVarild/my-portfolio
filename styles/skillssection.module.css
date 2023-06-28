@@ -1,23 +1,37 @@
 .widgetContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 	margin-top: 2rem;
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 }
 
 .widgetContainer::before {
 	content: "";
 	width: 100%;
 	height: 100%;
-    background: linear-gradient(90deg, rgba(20,22,40,1) 0%, rgba(20,22,40,1) 1%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 70%, rgba(20,22,40,1) 99%, rgba(20,22,40,1) 100%);
-    position: absolute;
-    pointer-events: none
+	background: linear-gradient(
+		90deg,
+		rgba(20, 22, 40, 1) 0%,
+		rgba(20, 22, 40, 1) 1%,
+		rgba(255, 255, 255, 0) 30%,
+		rgba(255, 255, 255, 0) 70%,
+		rgba(20, 22, 40, 1) 99%,
+		rgba(20, 22, 40, 1) 100%
+	);
+	position: absolute;
+	pointer-events: none;
+	z-index: 1;
 }
 
 .widgetRow,
 .miniWidgetRow {
+	display: flex;
+}
+
+.widgetMover {
+	position: relative;
 	display: flex;
 	gap: 1rem;
 }
@@ -26,18 +40,75 @@
 .miniWidget {
 	border-radius: 30px;
 	background: var(--background-white);
-    border: 1px solid var(--outline-white);
-	padding: 1rem 2rem;
+	border: 1px solid var(--outline-white);
+	padding: 1.2rem 2rem;
 }
 
 .miniWidget {
 	font-weight: 600;
 	font-size: 1.3rem;
-	min-width: 30%;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .widget img {
 	height: 4rem;
 	width: auto;
+}
+
+.forwardPrimaryMover {
+	animation: forwardPrimaryMoverAnim 15s linear infinite;
+	transform: translateX(0%);
+	padding-right: 1rem;
+}
+
+@keyframes forwardPrimaryMoverAnim {
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+.forwardSecondaryMover {
+	animation: forwardSecondaryMoverAnim 15s linear infinite;
+	transform: translateX(-200%);
+	padding-right: 1rem;
+}
+
+@keyframes forwardSecondaryMoverAnim {
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.reversePrimaryMover {
+	animation: reversePrimaryMoverAnim 15s linear infinite;
+	transform: translateX(0%);
+	padding-right: 1rem;
+}
+
+@keyframes reversePrimaryMoverAnim {
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.reverseSecondaryMover {
+	animation: reverseSecondaryMoverAnim 15s linear infinite;
+	transform: translateX(0%);
+	padding-right: 1rem;
+}
+
+@keyframes reverseSecondaryMoverAnim {
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.miniWidgetRow .widgetMover {
+	animation-duration: 20s;
+}
+
+.widgetRow:hover .widgetMover,
+.miniWidgetRow:hover .widgetMover {
+	animation-play-state: paused;
 }
