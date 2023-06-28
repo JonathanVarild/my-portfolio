@@ -11,7 +11,7 @@ function SkillsSection() {
 		{ logo: react_white, alt: "ReactJS Logo in white" },
 	].map((element, index) => (
 		<button className={styles.widget} key={index}>
-			<Image src={element.logo} alt={element.alt} />
+			<Image src={element.logo} alt={element.alt} loading="eager"/>
 		</button>
 	));
 
@@ -22,7 +22,7 @@ function SkillsSection() {
 		{ logo: react_white, alt: "ReactJS Logo in white" },
 	].map((element, index) => (
 		<button className={styles.widget} key={index}>
-			<Image src={element.logo} alt={element.alt} />
+			<Image src={element.logo} alt={element.alt} loading="eager" />
 		</button>
 	));
 
