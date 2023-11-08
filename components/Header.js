@@ -55,33 +55,36 @@ function Header() {
 	};
 
 	return (
-		<header className={styles.header}>
-			<div className={styles.navList}>
-				{startOffset != 0 && (
-					<div
-						className={styles.navHighlight}
-						style={{ left: leftMargin - startOffset, width: startOffset * 2 + width, transition: "left 0.3s ease, width 0.3s ease" }}
-						ref={navHighlight}
+		<>
+			<header className={styles.header}>
+				<div className={styles.navList}>
+					{startOffset != 0 && (
+						<div
+							className={styles.navHighlight}
+							style={{ left: leftMargin - startOffset, width: startOffset * 2 + width, transition: "left 0.3s ease, width 0.3s ease" }}
+							ref={navHighlight}
+						/>
+					)}
+					{navHTMLItems}
+				</div>
+				<div className={styles.iconList}>
+					<FontAwesomeIcon
+						icon={faLinkedinIn}
+						onClick={() => {
+							openLink("https://www.linkedin.com/in/jonathanvärild/");
+						}}
 					/>
-				)}
-				{navHTMLItems}
-			</div>
-			<div className={styles.iconList}>
-				<FontAwesomeIcon
-					icon={faLinkedinIn}
-					onClick={() => {
-						openLink("https://www.linkedin.com/in/jonathanvärild/");
-					}}
-				/>
-				<FontAwesomeIcon
-					icon={faGithub}
-					onClick={() => {
-						openLink("https://github.com/JonathanVarild");
-					}}
-				/>
-				<FontAwesomeIcon icon={faFileContract} />
-			</div>
-		</header>
+					<FontAwesomeIcon
+						icon={faGithub}
+						onClick={() => {
+							openLink("https://github.com/JonathanVarild");
+						}}
+					/>
+					<FontAwesomeIcon icon={faFileContract} />
+				</div>
+			</header>
+			<div className={styles.headerBackground} />
+		</>
 	);
 }
 
