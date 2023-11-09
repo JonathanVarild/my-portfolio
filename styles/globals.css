@@ -12,6 +12,7 @@
 	--bright-purple: #6435ff;
 	--hover-purple: #313760;
 	--hover-purple2: #6b42f4;
+	--clickable-purple: #7d56ff;
 	--background-white: #ffffff1a;
 	--outline-white: #ffffff35;
 	--hover-gray: #d9d9d9;
@@ -68,4 +69,8 @@ button {
 button:hover {
 	background: #ffffff25;
 	cursor: pointer;
+}
+
+a {
+	color: var(--clickable-purple);
 }
