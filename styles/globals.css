@@ -37,6 +37,10 @@ body {
 	flex-direction: column;
 }
 
+section {
+	scroll-margin-top: 10rem;
+}
+
 section, header, footer {
 	width: min(80%, 1000px);
 }
