@@ -7,17 +7,25 @@
 }
 
 .ratingContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .starContainer svg {
-	color: var(--bright-purple);
+	color: var(--dark-gray);
 }
 
-.unchecked  {
-    color: var(--dark-gray) !important;
+.starContainer svg:hover {
+	cursor: pointer;
+}
+
+.checked {
+	color: var(--bright-purple) !important;
+}
+
+.starContainer:hover .checked {
+	color: var(--clickable-purple) !important;
 }
 
 .copyrightContainer {
@@ -34,5 +42,5 @@
 }
 
 .githubContainer a {
-    font-weight: 600;
+	font-weight: 600;
 }
