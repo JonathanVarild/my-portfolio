@@ -13,7 +13,7 @@ function Header() {
 	const navHighlight = useRef(null);
 
 	const navItems = [
-		{ title: "Start", path: "#", ref: useRef(null) },
+		{ title: "Start", path: "#start", ref: useRef(null) },
 		{ title: "About Me", path: "#about", ref: useRef(null) },
 		{ title: "Skills", path: "#skills", ref: useRef(null) },
 		{ title: "Projects", path: "#projects", ref: useRef(null) },

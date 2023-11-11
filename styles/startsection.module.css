@@ -1,4 +1,4 @@
-#startSection {
+.startSection {
 	height: 100vh;
     min-height: 600px;
     display: flex;
@@ -11,26 +11,26 @@
     margin-right: 6rem;
 }
 
-#startSection img {
+.startSection img {
     height: 15rem;
     width: auto;
 }
 
-#startSection span {
+.startSection span {
     color: var(--bright-purple);
 }
 
-#startSection h1 {
+.startSection h1 {
     font-size: 6rem;
     line-height: 5.5rem;
 }
 
-#startSection h2 {
+.startSection h2 {
     font-size: 3.9rem;
     font-weight: 400;
 }
 
-#startSection h3 {
+.startSection h3 {
     font-weight: 400;
     font-size: 1.45rem;
     color: var(--contrast-gray);

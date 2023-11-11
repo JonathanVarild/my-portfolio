@@ -6,7 +6,7 @@ function StartSection() {
 	return (
 		<>
 			<div className={styles.sectionBackground} />
-			<section id={styles.startSection}>
+			<section className={styles.startSection} id="start">
 				<div className={styles.container}>
 					<h1>Jonathan Värild</h1>
 					<h2>
