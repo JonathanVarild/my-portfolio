@@ -48,7 +48,7 @@ function EmailModal({ setVisibility }) {
 	};
 
 	return (
-		<div className={styles.modalContainer}>
+		<div className={styles.modalContainer} onClick={close}>
 			<div className={styles.dialog}>
 				<h2>Send Email</h2>
 				<p>I am all open to hear your offers, ideas or feedback! Send me an email using the adress below and I will usually reply within a few hours!</p>
