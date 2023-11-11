@@ -27,7 +27,6 @@ function Header() {
 			onClick={({ target }) => {
 				setLeftMargin(target.offsetLeft);
 				setWidth(target.offsetWidth);
-				setActiveItem(index);
 			}}
 			className={index == activeItem ? styles.active : ""}
 			href={item.path}
@@ -42,11 +41,37 @@ function Header() {
 		setWidth(navItems[activeItem].ref.current.offsetWidth);
 	};
 
+	const sections = navItems.map((item) => item.path.slice(1));
+
+	const checkVisibleSection = () => {
+		const windowCenter = window.innerHeight / 2;
+
+		for (let i = 0; i < sections.length; i++) {
+			const sectionRect = document.getElementById(sections[i]).getBoundingClientRect();
+			const sectionTop = sectionRect.top;
+			const sectionBottom = sectionRect.bottom;
+
+			// Check if scrolled to the bottom
+			if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 30) {
+				setActiveItem(sections.length - 1);
+				return;
+			} else if (sectionTop <= windowCenter && sectionBottom >= windowCenter) {
+				setActiveItem(i);
+				return;
+			}
+		}
+	};
+
 	useEffect(() => {
 		setupVariables();
+		checkVisibleSection();
+
 		window.addEventListener("resize", setupVariables);
+		window.addEventListener("scroll", checkVisibleSection);
+
 		return () => {
 			window.removeEventListener("resize", setupVariables);
+			window.removeEventListener("scroll", checkVisibleSection);
 		};
 	});
 
